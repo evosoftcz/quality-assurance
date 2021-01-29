@@ -5,7 +5,7 @@
     <config name="php_version" value="70400"/>
 
     <!-- Import base -->
-    <rule ref="./ruleset-base.xml"/>
+<!--    <rule ref="./ruleset-base.xml"/>-->
 
     <!-- Evosoft Rule set -->
     <rule ref="./ruleset-evosoft.xml"/>
