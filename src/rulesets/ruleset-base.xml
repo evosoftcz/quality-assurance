@@ -321,9 +321,10 @@
 	<rule ref="Squiz.WhiteSpace.FunctionOpeningBraceSpace"/>
 	<rule ref="Squiz.WhiteSpace.FunctionSpacing">
 		<properties>
-			<property name="spacing" value="1"/>
+			<property name="spacing" value="0"/>
 		</properties>
 		<!-- Does not allow PHPUnit ignore comments -->
+		<exclude name="Squiz.WhiteSpace.FunctionSpacing.Before"/>
 		<exclude name="Squiz.WhiteSpace.FunctionSpacing.After"/>
 	</rule>
 	<rule ref="Generic.WhiteSpace.LanguageConstructSpacing"/>
