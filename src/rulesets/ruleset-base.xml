@@ -307,7 +307,6 @@
 		</properties>
 	</rule>
 	<rule ref="Squiz.WhiteSpace.CastSpacing"/>
-	<rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
 	<rule ref="PEAR.WhiteSpace.ObjectOperatorIndent"/>
 	<rule ref="Squiz.WhiteSpace.ObjectOperatorSpacing">
 		<properties>
