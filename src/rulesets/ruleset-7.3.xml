@@ -7,11 +7,6 @@
 	<!-- Import base -->
 	<rule ref="./ruleset-base.xml"/>
 
-	<!-- Version-specific rules -->
-	<rule ref="SlevomatCodingStandard.Functions.DisallowArrowFunction"/>
-	<rule ref="SlevomatCodingStandard.Functions.TrailingCommaInCall"/>
-	<rule ref="SlevomatCodingStandard.Numbers.DisallowNumericLiteralSeparator"/>
-
 	<!-- Evosoft Rule set -->
 	<rule ref="./ruleset-evosoft.xml"/>
 
