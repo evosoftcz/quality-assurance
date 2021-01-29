@@ -22,7 +22,6 @@
   ],
   "require": {
     "php": ">=7.1.0",
-    "slevomat/coding-standard": "^6.4.0",
     "squizlabs/php_codesniffer": "^3.5.0"
   },
   "minimum-stability": "stable",

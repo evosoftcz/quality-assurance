@@ -3,6 +3,9 @@
 		xsi:noNamespaceSchemaLocation="../../vendor/squizlabs/php_codesniffer/phpcs.xsd">
 
 	<!-- Evosoft Rules -->
+	<config name="installed_paths" value="../../vendor/evosoft/quality-assurance/"/>
+	<rule ref="PSR12" />
+
 	<rule ref="Generic.Commenting.Todo.CommentFound">
 		<message>Please review this TODO comment: %s</message>
 		<severity>3</severity>
