@@ -1,0 +1,37 @@
+{
+  "name": "evosoft/quality-assurance",
+  "description": "Evosoft Quality Assurance",
+  "keywords": [
+    "qa",
+    "phpcs",
+    "standards",
+    "coding standard"
+  ],
+  "type": "library",
+  "license": "MPL-2.0",
+  "homepage": "https://evosoft.cz",
+  "authors": [
+    {
+      "name": "evosoft sro",
+      "homepage": "https://evosoft.cz"
+    },
+    {
+      "name": "Dominik Procházka (domm98cz@gmail.com)",
+      "homepage": "https://Domm.cz"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.0",
+    "slevomat/coding-standard": "^6.4.0",
+    "squizlabs/php_codesniffer": "^3.5.0"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true
+  },
+  "scripts": {
+    "phpstan-app": "vendor/bin/phpstan analyse -c app/phpstan.neon app --level 5 --memory-limit 1024M --no-progress -vvv",
+    "phpstan-libs": "vendor/bin/phpstan analyse -c libs/phpstan.neon libs --level 5 --memory-limit 1024M --no-progress -vvv"
+  }
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<ruleset name="Custom Standard" namespace="SEP\CS\Standard">
+
+    <file>app/</file>
+    <exclude-pattern>vendor</exclude-pattern>
+    <exclude-pattern>resources</exclude-pattern>
+    <exclude-pattern>node_modules/</exclude-pattern>
+    <exclude-pattern>app/config</exclude-pattern>
+
+    <rule ref="PSR12" />
+
+    <rule ref="Generic.Commenting.Todo.CommentFound">
+        <message>Please review this TODO comment: %s</message>
+        <severity>3</severity>
+    </rule>
+
+    <!--    <rule ref="Squiz.Commenting.FunctionComment" >-->
+    <!--        <exclude name="Squiz.Commenting.FunctionComment.MissingParamComment"/>-->
+    <!--        <exclude name="Squiz.Commenting.FunctionComment.EmptyThrows"/>-->
+    <!--        <exclude name="Squiz.Commenting.FunctionComment.MissingReturn"/>-->
+    <!--    </rule>-->
+    <!--    <rule ref="Squiz.Commenting.FunctionCommentThrowTag" />-->
+    <!--    <rule ref="Squiz.Commenting.ClassComment" >-->
+    <!--        <exclude name="Squiz.Commenting.ClassComment.TagNotAllowed"/>-->
+    <!--    </rule>-->
+    <!--    <rule ref="Squiz.Commenting.FileComment" >-->
+    <!--        <exclude name="Squiz.Commenting.FileComment.Missing"/>-->
+    <!--    </rule>-->
+    <!--    <rule ref="Squiz.Commenting.VariableComment" >-->
+    <!--        <exclude name="Squiz.Commenting.VariableComment.TagNotAllowed"/>-->
+    <!--    </rule>-->
+    <!--    <rule ref="Squiz.Commenting.FunctionCommentThrowTag" >-->
+    <!--        <exclude name="Squiz.Commenting.FunctionCommentThrowTag.WrongNumber"/>-->
+    <!--    </rule>-->
+
+    <!--    <rule ref="Squiz.Strings.DoubleQuoteUsage.ContainsVar">-->
+    <!--        <include-pattern>*/templates/*</include-pattern>-->
+    <!--        <include-pattern>*\.tpl$</include-pattern>-->
+    <!--    </rule>-->
+
+    <rule ref="Generic.Files.LineLength">
+        <properties>
+            <property name="lineLimit" value="150"/>
+            <property name="absoluteLineLimit" value="160"/>
+        </properties>
+    </rule>
+
+    <rule ref="Generic.PHP.ForbiddenFunctions">
+        <properties>
+            <property name="forbiddenFunctions" type="array" value="eval=>NULL,dd=>NULL,die=>NULL,var_dump=>NULL,sizeof=>count,delete=>unset,print=>echo,create_function=>NULL,dumpe=>NULL,bdump=>NULL"/>
+        </properties>
+    </rule>
+
+</ruleset>
