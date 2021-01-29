@@ -1,0 +1,36 @@
+<ruleset
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="../../vendor/squizlabs/php_codesniffer/phpcs.xsd">
+
+	<!-- Evosoft Rules -->
+	<rule ref="Generic.Commenting.Todo.CommentFound">
+		<message>Please review this TODO comment: %s</message>
+		<severity>3</severity>
+	</rule>
+
+	<rule ref="Generic.Files.LineLength">
+		<properties>
+			<property name="lineLimit" value="150"/>
+			<property name="absoluteLineLimit" value="160"/>
+		</properties>
+	</rule>
+
+	<rule ref="Generic.PHP.ForbiddenFunctions">
+		<properties>
+			<property name="forbiddenFunctions" type="array">
+				<element key="eval" value="NULL"/>
+				<element key="dd" value="NULL"/>
+				<element key="die" value="NULL"/>
+				<element key="var_dump" value="NULL"/>
+				<element key="sizeof" value="count"/>
+				<element key="delete" value="unset"/>
+				<element key="print" value="echo"/>
+				<element key="create_function" value="NULL"/>
+				<element key="dumpe" value="NULL"/>
+				<element key="dump" value="NULL"/>
+				<element key="bdump" value="NULL"/>
+			</property>
+		</properties>
+	</rule>
+
+</ruleset>
