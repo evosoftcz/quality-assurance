@@ -51,7 +51,6 @@
 	<rule ref="Generic.PHP.DisallowShortOpenTag"/>
 	<rule ref="Generic.PHP.LowerCaseConstant"/>
 	<rule ref="PSR2.Files.EndFileNewline"/>
-	<rule ref="Squiz.PHP.DisallowInlineIf"/>
 	<rule ref="Squiz.PHP.DiscouragedFunctions"/>
 	<rule ref="Squiz.PHP.Eval"/>
 	<rule ref="Squiz.PHP.NonExecutableCode"/>
