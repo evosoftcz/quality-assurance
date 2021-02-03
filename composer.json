@@ -1,5 +1,5 @@
 {
-  "name": "evosoft/quality-assurance",
+  "name": "evosoftcz/quality-assurance",
   "description": "Evosoft Quality Assurance",
   "keywords": [
     "qa",
@@ -22,7 +22,8 @@
   ],
   "require": {
     "php": ">=7.1.0",
-    "squizlabs/php_codesniffer": "^3.5.0"
+    "squizlabs/php_codesniffer": "^3.5.0",
+    ""
   },
   "minimum-stability": "stable",
   "prefer-stable": true,
