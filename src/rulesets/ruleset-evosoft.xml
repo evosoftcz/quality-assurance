@@ -18,26 +18,26 @@
 		</properties>
 	</rule>
 
-	<rule ref="Generic.PHP.ForbiddenFunctions">
-		<properties>
-			<property name="forbiddenFunctions" type="array">
-				<element key="eval" value="NULL"/>
-				<element key="dd" value="NULL"/>
-				<element key="die" value="NULL"/>
-				<element key="var_dump" value="NULL"/>
-				<element key="sizeof" value="count"/>
-				<element key="delete" value="unset"/>
-				<element key="print" value="echo"/>
-				<element key="create_function" value="NULL"/>
-				<element key="dumpe" value="NULL"/>
-				<element key="dump" value="NULL"/>
-				<element key="bdump" value="NULL"/>
-				<element key="exit" value="NULL"/>
-				<element key="die" value="NULL"/>
-				<element key="phpinfo" value="NULL"/>
-			</property>
-		</properties>
-	</rule>
+    <rule ref="Generic.PHP.ForbiddenFunctions">
+        <properties>
+            <property name="forbiddenFunctions" type="array">
+                <element key="print" value="echo" />
+                <element key="sizeof" value="count" />
+                <element key="delete" value="unset" />
+                <element key="eval" value="null" />
+                <element key="dd" value="null" />
+                <element key="die" value="null" />
+                <element key="var_dump" value="null" />
+                <element key="create_function" value="null" />
+                <element key="dumpe" value="null" />
+                <element key="dump" value="null" />
+                <element key="bdump" value="null" />
+                <element key="exit" value="null" />
+                <element key="die" value="null" />
+                <element key="phpinfo" value="null" />
+            </property>
+        </properties>
+    </rule>
 
 	<rule ref="Generic.Classes.DuplicateClassName"/>
 	<rule ref="Generic.CodeAnalysis.EmptyStatement"/>
