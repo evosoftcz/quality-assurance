@@ -8,7 +8,6 @@
 
 	<rule ref="Generic.Commenting.Todo.CommentFound">
 		<message>Please review this TODO comment: %s</message>
-		<severity>3</severity>
 	</rule>
 
 	<rule ref="Generic.Files.LineLength">
@@ -16,13 +15,13 @@
 			<property name="lineLimit" value="150"/>
 			<property name="absoluteLineLimit" value="160"/>
 		</properties>
-	</rule>
+    </rule>
 
     <rule ref="Generic.PHP.ForbiddenFunctions">
         <properties>
             <property name="forbiddenFunctions" type="array">
                 <element key="print" value="echo" />
-                <element key="sizeof" value="count" />
+<!--                <element key="sizeof" value="count" />-->
                 <element key="delete" value="unset" />
                 <element key="eval" value="null" />
                 <element key="dd" value="null" />
@@ -31,12 +30,13 @@
                 <element key="create_function" value="null" />
                 <element key="dumpe" value="null" />
                 <element key="dump" value="null" />
-                <element key="bdump" value="null" />
+<!--                <element key="bdump" value="null" />-->
                 <element key="exit" value="null" />
                 <element key="die" value="null" />
                 <element key="phpinfo" value="null" />
             </property>
         </properties>
+        <severity>10</severity>
     </rule>
 
 	<rule ref="Generic.Classes.DuplicateClassName"/>
