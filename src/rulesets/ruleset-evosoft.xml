@@ -30,6 +30,7 @@
                 <element key="create_function" value="null" />
                 <element key="dumpe" value="null" />
                 <element key="dump" value="null" />
+                <element key="goto" value="null" />
 <!--                <element key="bdump" value="null" />-->
                 <element key="exit" value="null" />
                 <element key="die" value="null" />
