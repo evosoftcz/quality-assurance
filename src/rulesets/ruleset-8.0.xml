@@ -1,13 +1,10 @@
-<ruleset
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="../../vendor/squizlabs/php_codesniffer/phpcs.xsd">
-    <!-- Configure ruleset -->
+<ruleset name="php80"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../vendor/squizlabs/php_codesniffer/phpcs.xsd">
     <config name="php_version" value="80000"/>
+    <rule ref="PSR12" />
 
-    <!-- Import base -->
-<!--    <rule ref="./ruleset-base.xml"/>-->
-
-    <!-- Evosoft Rule set -->
+    <!--    <rule ref="./ruleset-base.xml"/>-->
+    <rule ref="./ruleset-slevomat.xml"/>
     <rule ref="./ruleset-evosoft.xml"/>
-
 </ruleset>
