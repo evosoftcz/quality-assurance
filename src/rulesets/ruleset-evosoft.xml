@@ -1,27 +1,27 @@
 <ruleset
-		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		xsi:noNamespaceSchemaLocation="../../vendor/squizlabs/php_codesniffer/phpcs.xsd">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../vendor/squizlabs/php_codesniffer/phpcs.xsd">
 
-	<!-- Evosoft Rules -->
-	<config name="installed_paths" value="../../vendor/evosoft/quality-assurance/"/>
-	<rule ref="PSR12" />
+    <config name="installed_paths" value="../../vendor/evosoft/quality-assurance/"/>
 
-	<rule ref="Generic.Commenting.Todo.CommentFound">
-		<message>Please review this TODO comment: %s</message>
-	</rule>
+    <rule ref="PSR12" />
 
-	<rule ref="Generic.Files.LineLength">
-		<properties>
-			<property name="lineLimit" value="150"/>
-			<property name="absoluteLineLimit" value="160"/>
-		</properties>
+    <rule ref="Generic.Commenting.Todo.CommentFound">
+        <message>Please review this TODO comment: %s</message>
+    </rule>
+
+    <rule ref="Generic.Files.LineLength">
+        <properties>
+            <property name="lineLimit" value="150"/>
+            <property name="absoluteLineLimit" value="160"/>
+        </properties>
     </rule>
 
     <rule ref="Generic.PHP.ForbiddenFunctions">
         <properties>
             <property name="forbiddenFunctions" type="array">
                 <element key="print" value="echo" />
-<!--                <element key="sizeof" value="count" />-->
+                <element key="sizeof" value="count" />
                 <element key="delete" value="unset" />
                 <element key="eval" value="null" />
                 <element key="dd" value="null" />
@@ -40,20 +40,26 @@
         <severity>10</severity>
     </rule>
 
-	<rule ref="Generic.Classes.DuplicateClassName"/>
-	<rule ref="Generic.CodeAnalysis.EmptyStatement"/>
-	<rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier"/>
-	<rule ref="Generic.CodeAnalysis.UnusedFunctionParameter"/>
-	<rule ref="Generic.Commenting.Todo"/>
-	<rule ref="Generic.Commenting.Fixme"/>
-	<rule ref="Generic.NamingConventions.UpperCaseConstantName"/>
-	<rule ref="Generic.NamingConventions.CamelCapsFunctionName"/>
-	<rule ref="Generic.PHP.DeprecatedFunctions"/>
-	<rule ref="Generic.PHP.DisallowShortOpenTag"/>
-	<rule ref="Generic.PHP.LowerCaseConstant"/>
-	<rule ref="PSR2.Files.EndFileNewline"/>
-	<rule ref="Squiz.PHP.DiscouragedFunctions"/>
-	<rule ref="Squiz.PHP.Eval"/>
-	<rule ref="Squiz.PHP.NonExecutableCode"/>
+    <rule ref="Generic.Classes.DuplicateClassName"/>
+    <rule ref="Generic.CodeAnalysis.EmptyStatement"/>
+    <rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier"/>
+    <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter"/>
+    <rule ref="Generic.Commenting.Todo"/>
+    <rule ref="Generic.Commenting.Fixme"/>
+    <rule ref="Generic.NamingConventions.UpperCaseConstantName"/>
+    <rule ref="Generic.NamingConventions.CamelCapsFunctionName"/>
+    <rule ref="Generic.PHP.DeprecatedFunctions"/>
+    <rule ref="Generic.PHP.DisallowShortOpenTag"/>
+    <rule ref="Generic.PHP.LowerCaseConstant"/>
+    <rule ref="PSR2.Files.EndFileNewline"/>
+    <rule ref="Squiz.PHP.DiscouragedFunctions"/>
+    <rule ref="Squiz.PHP.Eval"/>
+    <rule ref="Squiz.PHP.NonExecutableCode"/>
+
+    <rule ref="Generic.Files.LineEndings">
+        <properties>
+            <property name="eolChar" value="\n"/>
+        </properties>
+    </rule>
 
 </ruleset>
